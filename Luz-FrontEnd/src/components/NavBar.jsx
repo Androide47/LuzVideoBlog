@@ -3,6 +3,7 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const Login = localStorage.getItem("Login");
   return (
     <Navbar bg="light" expand="lg" style={{ backgroundColor: "#E8E1F5" }}>
       <Container fluid>
@@ -22,23 +23,47 @@ const NavBar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Button
-              as={Link}
-              to="/signin"
-              variant="outline-success"
-              className="me-2"
-              style={{ backgroundColor: "#D4F593", color: "#94AD61" }}
-            >
-              Sign In
-            </Button>
-            <Button
-              as={Link}
-              to="/login"
-              variant="outline-success"
-              style={{ backgroundColor: "#D4F593", color: "#94AD61" }}
-            >
-              Login
-            </Button>
+            {Login ? (
+              <>
+                <Button
+                  as={Link}
+                  to="/"
+                  variant="outline-success"
+                  className="me-2"
+                  style={{ backgroundColor: "#D4F593", color: "#94AD61" }}
+                >
+                  Sign Out
+                </Button>
+                <Button
+                  as={Link}
+                  to="/profile"
+                  variant="outline-success"
+                  style={{ backgroundColor: "#D4F593", color: "#94AD61" }}
+                >
+                  Profile
+                </Button>
+              </>
+            ) : (
+              <>
+                <Button
+                  as={Link}
+                  to="/signin"
+                  variant="outline-success"
+                  className="me-2"
+                  style={{ backgroundColor: "#D4F593", color: "#94AD61" }}
+                >
+                  Sign In
+                </Button>
+                <Button
+                  as={Link}
+                  to="/login"
+                  variant="outline-success"
+                  style={{ backgroundColor: "#D4F593", color: "#94AD61" }}
+                >
+                  Login
+                </Button>
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

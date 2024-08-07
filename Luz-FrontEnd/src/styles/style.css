@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Body */
+body {
+  background-color: #ffffff; /* Background Color */
+  color: #000000; /* Default text color */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #e8e1f5; /* Primary Color */
+}
+
+.navbar-brand {
+  color: #94ad61; /* Secondary Color */
+}
+
+.navbar-nav .nav-link {
+  color: #000000; /* Default link color */
+}
+
+/* Sidebar */
+.bg-light {
+  background-color: #d4f593 !important; /* Accent Color */
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #94ad61; /* Secondary Color */
+  border-color: #94ad61; /* Secondary Color */
+}
+
+.btn-primary:hover {
+  background-color: #82a94f; /* Slightly darker shade */
+  border-color: #82a94f; /* Slightly darker shade */
+}
+
+/* Forms */
+.form-control {
+  border-color: #e8e1f5; /* Primary Color */
+}
+
+.form-control:focus {
+  border-color: #94ad61; /* Secondary Color */
+  box-shadow: 0 0 0 0.2rem rgba(148, 173, 97, 0.25); /* Secondary Color */
+}
+
+/* Cards */
+.card {
+  border-color: #e8e1f5; /* Primary Color */
+}
+
+.card-header {
+  background-color: #e8e1f5; /* Primary Color */
+  color: #000000; /* Default text color */
+}
+
+.card-body {
+  background-color: #ffffff; /* Background Color */
+}

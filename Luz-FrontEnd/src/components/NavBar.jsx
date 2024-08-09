@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -9,8 +9,8 @@ const NavBar = () => {
       <Container fluid>
         <Navbar.Brand as={Link} to="/" style={{ color: "#94AD61" }}>
           <img
-            src="logos/Logo.png"
-            height="40"
+            src="logos/2.png"
+            height="70"
             className="d-inline-block align-top"
             alt="Logo Luz"
           />
@@ -23,6 +23,36 @@ const NavBar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
+            <NavDropdown
+              title={
+                <>
+                  <img
+                    src="flags/us.png"
+                    alt="English"
+                    style={{ width: "20px", marginRight: "5px" }}
+                  />
+                  Language
+                </>
+              }
+              id="language-dropdown"
+            >
+              <NavDropdown.Item href="#/en">
+                <img
+                  src="flags/us.png"
+                  alt="English"
+                  style={{ width: "20px", marginRight: "10px" }}
+                />
+                English
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#/es">
+                <img
+                  src="flags/mx.png"
+                  alt="Spanish"
+                  style={{ width: "20px", marginRight: "10px" }}
+                />
+                Spanish
+              </NavDropdown.Item>
+            </NavDropdown>
             {Login ? (
               <>
                 <Button

@@ -8,6 +8,7 @@ import Home from "./screens/Home"; // Import the new Home component
 import Blog from "./screens/Blog";
 import VideoPlayer from "./screens/VideoPlayer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/style.css";
 
 const App = () => {
   return (

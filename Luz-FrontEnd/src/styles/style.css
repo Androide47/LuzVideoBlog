@@ -58,3 +58,18 @@ body {
 .card-body {
   background-color: #ffffff; /* Background Color */
 }
+
+/* src/styles.css */
+
+.latest-videos {
+  padding: 20px;
+}
+
+.latest-videos h2 {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 225px;
+  object-fit: cover;
+}

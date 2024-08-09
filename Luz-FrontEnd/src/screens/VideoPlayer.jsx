@@ -59,6 +59,13 @@ const VideoPlayer = () => {
 
   return (
     <Container className="mt-5">
+      <Row className="mt-4 mb-4">
+        <Col>
+          <Link to="/blog">
+            <Button variant="secondary">Back to Blog</Button>
+          </Link>
+        </Col>
+      </Row>
       <Row>
         <Col md={8}>
           <Card>
@@ -163,14 +170,6 @@ const VideoPlayer = () => {
               </Row>
             </Card.Body>
           </Card>
-        </Col>
-      </Row>
-
-      <Row className="mt-4">
-        <Col>
-          <Link to="/blog">
-            <Button variant="secondary">Back to Blog</Button>
-          </Link>
         </Col>
       </Row>
     </Container>

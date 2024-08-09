@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       className="text-center py-5"
-      style={{ backgroundColor: "#E8E1F5", color: "#000000" }}
+      style={{ backgroundColor: "#000000", color: "#FFFFFF" }}
     >
       <div className="container">
         <div className="row">
@@ -13,7 +13,7 @@ const Footer = () => {
             <h5>Contact</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/contact" style={{ color: "#000000" }}>
+                <Link to="/contact" style={{ color: "#FFFFFF" }}>
                   Contact Us
                 </Link>
               </li>
@@ -25,17 +25,17 @@ const Footer = () => {
             <h5>Options</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/subscribe" style={{ color: "#000000" }}>
+                <Link to="/subscribe" style={{ color: "#FFFFFF" }}>
                   Subscribe
                 </Link>
               </li>
               <li>
-                <Link to="/login" style={{ color: "#000000" }}>
+                <Link to="/login" style={{ color: "#FFFFFF" }}>
                   Login
                 </Link>
               </li>
               <li>
-                <Link to="/signup" style={{ color: "#000000" }}>
+                <Link to="/signup" style={{ color: "#FFFFFF" }}>
                   Sign Up
                 </Link>
               </li>
@@ -45,17 +45,17 @@ const Footer = () => {
             <h5>Legal Disclosure</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/terms" style={{ color: "#000000" }}>
+                <Link to="/terms" style={{ color: "#FFFFFF" }}>
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" style={{ color: "#000000" }}>
+                <Link to="/privacy" style={{ color: "#FFFFFF" }}>
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/disclaimer" style={{ color: "#000000" }}>
+                <Link to="/disclaimer" style={{ color: "#FFFFFF" }}>
                   Disclaimer
                 </Link>
               </li>
@@ -65,17 +65,17 @@ const Footer = () => {
             <h5>Other Links</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/about" style={{ color: "#000000" }}>
+                <Link to="/about" style={{ color: "#FFFFFF" }}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/blog" style={{ color: "#000000" }}>
+                <Link to="/blog" style={{ color: "#FFFFFF" }}>
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/faq" style={{ color: "#000000" }}>
+                <Link to="/faq" style={{ color: "#FFFFFF" }}>
                   FAQ
                 </Link>
               </li>

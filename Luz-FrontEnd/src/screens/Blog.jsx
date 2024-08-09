@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
+import LatestVideos from "../components/LastestVideos";
 
 const Blog = () => {
   const videos = [
@@ -30,6 +31,36 @@ const Blog = () => {
     },
   ];
 
+  const lastestVideos = [
+    {
+      id: 1,
+      url: "path/to/video1.mp4",
+      title: "Video 1",
+      description: "This is the first video",
+      date: "2023-01-01",
+    },
+    {
+      id: 2,
+      url: "path/to/video2.mp4",
+      title: "Video 2",
+      description: "This is the second video",
+      date: "2023-02-01",
+    },
+    {
+      id: 3,
+      url: "path/to/video3.mp4",
+      title: "Video 3",
+      description: "This is the third video",
+      date: "2023-03-01",
+    },
+    {
+      id: 4,
+      url: "path/to/video4.mp4",
+      title: "Video 4",
+      description: "This is the fourth video",
+      date: "2023-04-01",
+    },
+  ];
   return (
     <Container className="mt-5">
       <h2>Blog</h2>
@@ -48,6 +79,9 @@ const Blog = () => {
             </Card>
           </Col>
         ))}
+      </Row>
+      <Row>
+        <LatestVideos videos={lastestVideos} />
       </Row>
     </Container>
   );
